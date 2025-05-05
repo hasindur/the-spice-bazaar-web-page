@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="register.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - The Spice Bazaar</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main class="form-page">
+    <form action="backend/register.php" method="POST">
+      <h2>Register</h2>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <select name="role" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="buyer">Buyer</option>
+        <option value="seller">Seller</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+  </main>
+</body>
+</html>
